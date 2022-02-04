@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none !important;
+}
+
+img{
+    max-width: 100%;
+}
+ul,ol{
+    list-style: none;
+}
+body{
+    background-color: #eee;
+}
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+
+
+
+nav{
+    background-color: #282828;
+    box-shadow: rgba(17, 0, 255, 0.15) 0px 5px 15px;
+}
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+nav .container .nav-logo{
+    right: 150px;
+}
+nav .container .nav-logo a img{
+    height: 120px;
+}
+nav .container h2{
+    font-size: 35px;
+    font-style: italic;
+    letter-spacing: 4px;
+    color: rgba(0, 195, 255, 0.808);
+    font-weight: 500;
+
+}
+nav .container ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+nav .container ul li{
+    position: relative;
+}
+nav .container ul  li  a{
+    color: #077fff;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+nav .container ul li a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    opacity: 0;
+    height: 2px;
+    border-radius: 10px;
+    bottom: -5px;
+    background-color: #088fff;
+    transition: all .5s;
+}
+nav .container ul li a:hover::before{
+    width: 100%;
+    opacity: 1;
+}
+
+
+
+
+/* Corusel (Start) */
+header{
+    max-width: 80%;
+    border-radius: 5px;
+    box-shadow: rgba(17, 0, 255, 0.75) 0px 5px 15px;
+    margin: 30px auto;
+}
+header .container{
+    max-width: 100%;
+}
+
+/* Corusel (End) */
+
+
+
+
+/* Section Items (Start) */
+section #header{
+    background-color: #282828;
+    height: 50px;
+}
+section #header h2{
+    text-align: center;
+    margin: 70px 0;
+    padding: 10px;
+    font-size: 25px;
+    font-style: italic;
+    letter-spacing: 4px;
+    color: rgba(0, 195, 255, 0.808);
+    font-weight: 500;
+}
+section #posts{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+section  input{  
+    padding: 5px;
+    width: 200px;
+    outline: none;
+    background-color: #eee;
+    border-radius: 5px;
+    border: 1px solid #077fff;
+    font-size: 17px;
+    color: #4b4b4b;
+    margin-left: 77%;
+    margin-top: 20px;
+    transition: all .5s;
+}
+section   input:focus{
+    transform: scale(1.1);
+    background-color: #00b7ff;
+    color: #282828;
+    width: 250px;
+}
+::placeholder{
+    font-size: 17px;
+    color: #4b4b4b;
+}
+section .post{
+    width: 300px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    overflow: hidden;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: all .5s;
+}
+section .post:hover{
+    transform: scale(1.03);
+    box-shadow: rgba(17, 0, 255, 0.377) 0px 5px 15px;
+
+}
+
+section .postImg{
+    width: 300px;
+    height: 300px;
+}
+
+
+section .postInfo{
+    padding: 20px;
+}
+
+section .postInfo h3{
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #353535;
+    text-transform: uppercase;
+}
+
+section .postInfo p{
+    margin: 15px 0;
+}
+
+section .postInfo a{
+    background-color: rgba(0, 103, 134, 0.908);
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all .7s;
+}
+section .postInfo a:hover{
+    transform: scale(1.1);
+    background-color: #0c0c0c;
+    color: #077fff;
+}
+/* Section Items (End) */
+
+
+/* Footer (Start) */
+footer{
+    background-color: #282828;
+    box-shadow: rgba(17, 0, 255, 0.75) 0px 5px 15px;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+footer .leftText{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+footer .leftText p{
+    color: #077fff;
+}
+footer .about{
+    text-align: center;
+    font-size: 20px;
+}
+footer .rightIcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 30%;
+    border-radius: 5px;
+}
+footer .rightIcon a{
+    color: #077fff;
+    font-size: 30px;
+    padding: 15px;
+    transition: all .5s;
+}
+footer .rightIcon a:hover{
+    transform: scale(1.1);
+    color: #fff;
+}
+/* Footer (End) */
